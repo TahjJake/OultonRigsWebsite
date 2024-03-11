@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jakes Tech Tips</title>
+  <link rel="shortcut icon" type="image/png" href="/favicon.png">
+
+  <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@latest/pace-theme-default.min.css">
+ 
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Back to the top</button>
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+</head>
+
+<body>
+
+  <body text="white">
+    <div class="header">
+      <h2>Oulton Rigs</h2>
+      <p>Custom PC Builds, Made Simple</p>
+    </div>
+    <nav class="indigo">
+      <div id=navbar>
+        <a href="" class="brand-logo">Oulton Rigs</a>
+        <ul class="right">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ContactPage.html">Contact</a></li>
+            <li><a href="">Book</a></li>
+            <li><a href="https://www.instagram.com/">Instagram</a></li>
+            <li><a href="https://www.pcgamer.com/uk/">Youtube</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <br></br>
+
+      <marquee behavior="scroll" direction="left">
+        20% off of all AMD builds this easter! Ends April 20th
+      </marquee>
+
+      <video width="540" height="540" autoplay loop muted src="JimPCVid.mp4"></video>
+
+      <img src="JakesPC.jpg" style="width:500px;height:600px;">
+
+      <h3>Welcome to Oulton Rigs!</h3>
+
+      <br></br>
+
+      <h4>We are a PC Service company in the east of the UK in Oulton Broad that offers many different services from building PC's to optimising them and fixing issues.</h4>
+      
+      <br></br>
+
+      <h3>To find out more and to book and order a service, <a href="index.html">click here</a></h3>
+
+      <br></br>
+
+    </div>
+
+    <h2>All pages:</h2>
+    <li><a href="index.html">Home Page</a></li>
+    <li class="divider" </li>
+    <li><a href="ContactPage.html">Contact Us</a></li>
+
+    <h6>This site was made by Jake Ross. Oulton Rigs© 2024</h6>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      window.onscroll = function () {myFunction()};
+
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script>
+    
+  </body>
+
+</html>
